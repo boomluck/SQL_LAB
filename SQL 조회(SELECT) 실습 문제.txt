@@ -1,0 +1,12 @@
+SELECT title, price FROM products;
+SELECT DISTINCT category FROM products;
+SELECT title, price FROM products WHERE price >= 50;
+SELECT * FROM products WHERE category IN ('Gizmo') AND rating >= 4.5;
+SELECT name, email FROM users WHERE email LIKE '%yahoo.com';
+SELECT * FROM orders WHERE YEAR(created_at) = '2018';
+SELECT FROM products ORDER BY price DESC LIMIT 5;
+SELECT name, state FROM users WHERE state IN ('CA', 'NY', 'TX');
+SELECT title, category FROM products WHERE rating = 0;
+SELECT title, price FROM products WHERE title LIKE '%Small%';
+SELECT * FROM products WHERE vendor = 'Senger-Stamm';
+SELECT title, price FROM products WHERE price >= 20 AND price <= 40;
